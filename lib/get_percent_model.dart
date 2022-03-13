@@ -21,7 +21,7 @@ class GetPercentModel {
       return Image.asset(
           'images/bad.png',
           width: 37,
-          height: 35
+          height: 35,
       );
     }
 
@@ -77,6 +77,33 @@ class GetPercentModel {
           fontWeight: FontWeight.w500,
           color: Colors.black,
         ),
+      );
+    }
+  }
+
+  Widget? getPercentDivider(double btc_percent) {
+    if(btc_percent < 3) {
+      return Divider(
+        height: 15,
+        thickness: 1.5,
+        color: Colors.green,
+        endIndent: 50,
+      );
+    }
+    else if((btc_percent >= 3) && (btc_percent < 5) ){
+      return Divider(
+        height: 15,
+        thickness: 1.5,
+        color: Colors.orangeAccent,
+        endIndent: 50,
+      );
+    }
+    else if(btc_percent >= 5 ){
+      return Divider(
+        height: 15,
+        thickness: 1.5,
+        color: Colors.red,
+        endIndent: 50,
       );
     }
   }

@@ -5,6 +5,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:pre_coin_prepare/get_percent_model.dart';
+import 'package:pre_coin_prepare/loading.dart';
+import 'package:pre_coin_prepare/loading1.dart';
 
 import 'network.dart';
 
@@ -22,9 +24,10 @@ class CoinScreenState extends State<CoinScreen> {
   Widget? icon;
   Widget? backgroundImage;
   Widget? percentText;
-  
-  
-  
+  Widget? percentDivider;
+
+  int _currentIndex = 0;
+
   var date = DateTime.now();
 
   dynamic upbitBTCPrice;
@@ -35,8 +38,6 @@ class CoinScreenState extends State<CoinScreen> {
   @override
   void initState() {
     super.initState();
-   // temp_fuction();
-   // Timer(Duration(seconds:1), ()=>{print('ready 1 sec')});
     updateData(widget.parseCoinData);
 
     var pid;
@@ -79,11 +80,12 @@ class CoinScreenState extends State<CoinScreen> {
         CoinData['prices']['upbit']['BTC']['korea_premium_percent'];
 
     koreaPremiumPercent = koreaPremiumPercent2.toStringAsFixed(2);
-    
+
     icon = getPercentModel.getPercentIcon(double.parse(koreaPremiumPercent));
     backgroundImage = getPercentModel.getBackgroundImage(double.parse(koreaPremiumPercent));
     percentText = getPercentModel.getPercentText(double.parse(koreaPremiumPercent));
-    
+    percentDivider = getPercentModel.getPercentDivider(double.parse(koreaPremiumPercent));
+
   }
 
 
@@ -104,6 +106,7 @@ class CoinScreenState extends State<CoinScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text(
           DateFormat('MMM   d    EEEE').format(date),
           style: GoogleFonts.lato(fontSize: 16, color: Colors.white),
@@ -115,7 +118,7 @@ class CoinScreenState extends State<CoinScreen> {
           IconButton(
             icon: Icon(Icons.refresh),
             onPressed: () {
-
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
             },
             iconSize: 30.0,
           )
@@ -205,12 +208,7 @@ class CoinScreenState extends State<CoinScreen> {
                 ),
                 Container(
                   padding: EdgeInsets.only(left: 50),
-                  child: Divider(
-                    height: 15,
-                    thickness: 1.5,
-                    color: Colors.orangeAccent,
-                    endIndent: 50,
-                  ),
+                  child: percentDivider!,
                 ),
                 SizedBox(
                   height: 10,
@@ -325,6 +323,42 @@ class CoinScreenState extends State<CoinScreen> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+        type: BottomNavigationBarType.fixed,
+        iconSize: 20,
+        selectedFontSize: 12,
+        unselectedFontSize: 10,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: '홈',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_today),
+            label: '달력 및 뉴스',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_alert_outlined),
+            label: '알림',
+          ),
+        ],
+        onTap: (int index){
+          setState(() {
+            _currentIndex = index;
+            if(index == 0){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
+            }
+            if(index == 1){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
+            }
+            if(index == 2){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
+            }
+          });
+        },
+      ),
     );
   }
 }
+
