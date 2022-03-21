@@ -7,7 +7,7 @@ import 'package:intl/intl.dart';
 import 'package:pre_coin_prepare/get_percent_model.dart';
 import 'package:pre_coin_prepare/loading.dart';
 import 'package:pre_coin_prepare/loading1.dart';
-
+import 'package:pre_coin_prepare/twit_page.dart';
 import 'network.dart';
 
 class CoinScreen extends StatefulWidget {
@@ -353,7 +353,7 @@ class CoinScreenState extends State<CoinScreen> {
               Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
             }
             if(index == 2){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Twitpage()));
             }
           });
         },
