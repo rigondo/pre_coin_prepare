@@ -5,6 +5,8 @@ import 'package:pre_coin_prepare/network_2.dart';
 import 'dart:ui' as ui;
 import 'dart:async';
 import 'package:flutter/widgets.dart';
+import 'package:pre_coin_prepare/pages/cal.dart';
+import 'package:pre_coin_prepare/pages/home.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:pre_coin_prepare/loading.dart';
 
@@ -108,7 +110,7 @@ class _TwitPageState extends State<Twitpage> {
   @override
   void initState() {
   }
-  int _currentIndex = 2;
+  int _currentIndex = 3;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -214,8 +216,12 @@ class _TwitPageState extends State<Twitpage> {
             label: '홈',
           ),
           BottomNavigationBarItem(
+            icon: Icon(Icons.fiber_new_rounded),
+            label: '뉴스',
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.calendar_today),
-            label: '달력 및 뉴스',
+            label: '일정',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.add_alert_outlined),
@@ -225,14 +231,16 @@ class _TwitPageState extends State<Twitpage> {
         onTap: (int index){
           setState(() {
             _currentIndex = index;
-
             if(index == 0){
               Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
             }
             if(index == 1){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => NewsPage()));
             }
             if(index == 2){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => SchedulePage()));
+            }
+            if(index == 3){
               Navigator.push(context, MaterialPageRoute(builder: (context) => Twitpage()));
             }
           });

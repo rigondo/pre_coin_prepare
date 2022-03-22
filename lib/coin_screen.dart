@@ -6,7 +6,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:pre_coin_prepare/get_percent_model.dart';
 import 'package:pre_coin_prepare/loading.dart';
-import 'package:pre_coin_prepare/loading1.dart';
+import 'package:pre_coin_prepare/pages/cal.dart';
+//import 'package:pre_coin_prepare/loading1.dart';
+import 'package:pre_coin_prepare/pages/home.dart';
 import 'package:pre_coin_prepare/twit_page.dart';
 import 'network.dart';
 
@@ -118,7 +120,7 @@ class CoinScreenState extends State<CoinScreen> {
           IconButton(
             icon: Icon(Icons.refresh),
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
             },
             iconSize: 30.0,
           )
@@ -335,8 +337,12 @@ class CoinScreenState extends State<CoinScreen> {
             label: '홈',
           ),
           BottomNavigationBarItem(
+            icon: Icon(Icons.fiber_new_rounded),
+            label: '뉴스',
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.calendar_today),
-            label: '달력 및 뉴스',
+            label: '일정',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.add_alert_outlined),
@@ -347,12 +353,15 @@ class CoinScreenState extends State<CoinScreen> {
           setState(() {
             _currentIndex = index;
             if(index == 0){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
             }
             if(index == 1){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => NewsPage()));
             }
             if(index == 2){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => SchedulePage()));
+            }
+            if(index == 3){
               Navigator.push(context, MaterialPageRoute(builder: (context) => Twitpage()));
             }
           });
