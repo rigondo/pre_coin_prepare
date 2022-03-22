@@ -242,6 +242,7 @@ class _TwitPageState extends State<Twitpage> {
   }
 }
 
+/*
 class Search extends SearchDelegate {
   @override
   List<Widget> buildActions(BuildContext context) {
@@ -338,3 +339,4 @@ class Search extends SearchDelegate {
     );
   }
 }
+*/
