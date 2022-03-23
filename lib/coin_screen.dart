@@ -155,7 +155,7 @@ class CoinScreenState extends State<CoinScreen> {
                           top: 50,
                           left: 60,
                         ),
-                      if(double.parse(koreaPremiumPercent) > 3 && double.parse(koreaPremiumPercent) < 5)
+                      if(double.parse(koreaPremiumPercent) >= 3 && double.parse(koreaPremiumPercent) < 5)
                         Positioned(
                           child: Image.asset(
                             'images/bear1.gif',
@@ -165,7 +165,7 @@ class CoinScreenState extends State<CoinScreen> {
                           top: 50,
                           left: 60,
                         ),
-                      if(double.parse(koreaPremiumPercent) > 5)
+                      if(double.parse(koreaPremiumPercent) >= 5)
                         Positioned(
                           child: Image.asset(
                             'images/bear_good.gif',
