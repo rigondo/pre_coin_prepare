@@ -10,6 +10,8 @@ import 'package:pre_coin_prepare/pages/home.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:pre_coin_prepare/loading.dart';
 
+import 'loading1.dart';
+
 _onBtcPressed() async {
   const url = 'https://twitter.com/bitcoin';
   if (await canLaunch(url)) {
@@ -232,7 +234,7 @@ class _TwitPageState extends State<Twitpage> {
           setState(() {
             _currentIndex = index;
             if(index == 0){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
             }
             if(index == 1){
               Navigator.push(context, MaterialPageRoute(builder: (context) => NewsPage()));

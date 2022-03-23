@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:pre_coin_prepare/get_percent_model.dart';
 import 'package:pre_coin_prepare/loading.dart';
+import 'package:pre_coin_prepare/loading1.dart';
 import 'package:pre_coin_prepare/pages/cal.dart';
 //import 'package:pre_coin_prepare/loading1.dart';
 import 'package:pre_coin_prepare/pages/home.dart';
@@ -146,12 +147,12 @@ class CoinScreenState extends State<CoinScreen> {
                       ),
                       Positioned(
                         child: Image.asset(
-                          'images/goraduck.png',
-                          width: 150,
-                          height: 150,
+                          'images/bear_smile.gif',
+                          width: 300,
+                          height: 300,
                         ),
-                        top: 125,
-                        left: 125,
+                        top: 50,
+                        left: 60,
                       ),
                     ],
                   ),
@@ -353,7 +354,7 @@ class CoinScreenState extends State<CoinScreen> {
           setState(() {
             _currentIndex = index;
             if(index == 0){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
             }
             if(index == 1){
               Navigator.push(context, MaterialPageRoute(builder: (context) => NewsPage()));
