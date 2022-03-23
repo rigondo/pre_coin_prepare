@@ -145,15 +145,36 @@ class CoinScreenState extends State<CoinScreen> {
                           child: backgroundImage!,
                         ),
                       ),
-                      Positioned(
-                        child: Image.asset(
-                          'images/bear_smile.gif',
-                          width: 300,
-                          height: 300,
+                      if(double.parse(koreaPremiumPercent) < 3)
+                        Positioned(
+                          child: Image.asset(
+                            'images/bear_smile.gif',
+                            width: 300,
+                            height: 300,
+                          ),
+                          top: 50,
+                          left: 60,
                         ),
-                        top: 50,
-                        left: 60,
-                      ),
+                      if(double.parse(koreaPremiumPercent) > 3 && double.parse(koreaPremiumPercent) < 5)
+                        Positioned(
+                          child: Image.asset(
+                            'images/bear1.gif',
+                            width: 300,
+                            height: 300,
+                          ),
+                          top: 50,
+                          left: 60,
+                        ),
+                      if(double.parse(koreaPremiumPercent) > 5)
+                        Positioned(
+                          child: Image.asset(
+                            'images/bear_good.gif',
+                            width: 300,
+                            height: 300,
+                          ),
+                          top: 50,
+                          left: 60,
+                        ),
                     ],
                   ),
                 ),
