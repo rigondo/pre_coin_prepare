@@ -1,10 +1,10 @@
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart';
 
-class Network_bit{
+class Network_test{
   final String url = "https://upbit.com/exchange?code=CRIX.UPBIT.KRW-BTC"
-  Network_bit(this.url);
-  Future<dynamic> getBitData() async{
+  Network_test(this.url);
+  Future<dynamic> getCoinData() async{
     final response =
     await http.Client().get(
         Uri.parse(url), headers: {
