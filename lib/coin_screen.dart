@@ -156,32 +156,32 @@ class CoinScreenState extends State<CoinScreen> {
                         if(double.parse(koreaPremiumPercent) < 3)
                           Positioned(
                             child: Image.asset(
-                              'images/bear_smile.gif',
-                              width: 300.w,
-                              height: 300.h,
+                              'images/pepe_smile.png',
+                              width: 260.w, //260.w
+                              height: 260.h, //260.h
                             ),
-                            top: deviceHeight * 0.073,
-                            left: deviceWidth * 0.15,
+                            top: deviceHeight * 0.12, //0.12
+                            left: deviceWidth * 0.17, //0.17
                           ),
                         if(double.parse(koreaPremiumPercent) >= 3 && double.parse(koreaPremiumPercent) < 5)
                           Positioned(
                             child: Image.asset(
-                              'images/bear1.gif',
-                              width: 300.w,
-                              height: 300.h,
+                              'images/pepe_soso.png',
+                              width: 350.w,
+                              height: 350.h,
                             ),
-                            top: deviceHeight * 0.073,
-                            left: deviceWidth * 0.15,
+                            top: deviceHeight * 0.04,
+                            left: deviceWidth * 0.08,
                           ),
                         if(double.parse(koreaPremiumPercent) >= 5)
                           Positioned(
                             child: Image.asset(
-                              'images/bear_good.gif',
+                              'images/pepe_sad.png',
                               width: 300.w,
                               height: 300.h,
                             ),
-                            top: deviceHeight * 0.073, // 50
-                            left: deviceWidth * 0.15, // 60
+                            top: deviceHeight * 0.08, // 50
+                            left: deviceWidth * 0.16, // 60
                           ),
                       ],
                     ),
