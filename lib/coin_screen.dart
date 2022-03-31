@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -30,6 +31,7 @@ class CoinScreenState extends State<CoinScreen> {
   Widget? percentDivider;
 
   int _currentIndex = 0;
+
 
   var date = DateTime.now();
 
@@ -106,288 +108,295 @@ class CoinScreenState extends State<CoinScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: Text(
-          DateFormat('MMM   d    EEEE').format(date),
-          style: GoogleFonts.lato(fontSize: 16, color: Colors.white),
-        ),
-        elevation: 0,
-        centerTitle: true,
-        backgroundColor: Colors.transparent,
-        actions: [
-          IconButton(
-            icon: Icon(Icons.refresh),
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
-            },
-            iconSize: 30.0,
-          )
-        ],
-      ),
-      body: Container(
-        child: Stack(
-          children: [
-            Column(
-              children: [
-                Container(
-                  child: Stack(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                            //나중에 디자인 더 해야함
-                            ),
-                        child: SizedBox(
-                          width: double.infinity,
-                          height: 350,
-                          child: backgroundImage!,
-                        ),
-                      ),
-                      if(double.parse(koreaPremiumPercent) < 3)
-                        Positioned(
-                          child: Image.asset(
-                            'images/bear_smile.gif',
-                            width: 300,
-                            height: 300,
-                          ),
-                          top: 50,
-                          left: 60,
-                        ),
-                      if(double.parse(koreaPremiumPercent) >= 3 && double.parse(koreaPremiumPercent) < 5)
-                        Positioned(
-                          child: Image.asset(
-                            'images/bear1.gif',
-                            width: 300,
-                            height: 300,
-                          ),
-                          top: 50,
-                          left: 60,
-                        ),
-                      if(double.parse(koreaPremiumPercent) >= 5)
-                        Positioned(
-                          child: Image.asset(
-                            'images/bear_good.gif',
-                            width: 300,
-                            height: 300,
-                          ),
-                          top: 50,
-                          left: 60,
-                        ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 15,
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 40),
-                  child: Row(
-                    children: [
-                      Text(
-                        '한국프리미엄',
-                        style: GoogleFonts.lato(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Column(
-                        children: [
-                          icon!,
-                          percentText!,
-                        ],
-                      ),
-                      SizedBox(
-                        width: 25,
-                      ),
-                      Text(
-                        '${koreaPremiumPercent}',
-                        style: GoogleFonts.lato(
-                          fontSize: 45,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Text(
-                        '%',
-                        style: GoogleFonts.lato(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 50),
-                  child: percentDivider!,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 80),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        'images/logo_upbit.png',
-                        width: 37,
-                        height: 35,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Text(
-                        '업비트',
-                        style: GoogleFonts.lato(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w300,
-                          color: Colors.black,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 70,
-                      ),
-                      Image.asset(
-                        'images/logo_binance.png',
-                        width: 37,
-                        height: 35,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Text(
-                        '바이낸스',
-                        style: GoogleFonts.lato(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w300,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 80),
-                  child: Row(
-                    children: [
-                      Text(
-                        '$upbitBTCPrice 원',
-                        style: GoogleFonts.lato(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      Text(
-                        '-',
-                        style: GoogleFonts.lato(
-                          fontSize: 35,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      Text(
-                        '$binanceBTCPrice 원',
-                        style: GoogleFonts.lato(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 150),
-                  child: Row(
-                    children: [
-                      Text(
-                        '=',
-                        style: GoogleFonts.lato(
-                          fontSize: 25,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      Text(
-                        '$koreaPremium 원',
-                        style: GoogleFonts.lato(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
+
+    final deviceWidth = MediaQuery.of(context).size.width;
+    final deviceHeight = MediaQuery.of(context).size.height;
+
+    return ScreenUtilInit(
+      designSize: Size(411.4, 683.4),
+      builder: ()=>Scaffold(
+        extendBodyBehindAppBar: true,
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          title: Text(
+            DateFormat('MMM   d    EEEE').format(date),
+            style: GoogleFonts.lato(fontSize: 16, color: Colors.white),
+          ),
+          elevation: 0,
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+          actions: [
+            IconButton(
+              icon: Icon(Icons.refresh),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
+              },
+              iconSize: 30.0,
+            )
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        type: BottomNavigationBarType.fixed,
-        iconSize: 20,
-        selectedFontSize: 12,
-        unselectedFontSize: 10,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '홈',
+        body: Container(
+          child: Stack(
+            children: [
+              Column(
+                children: [
+                  Container(
+                    child: Stack(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                              //나중에 디자인 더 해야함
+                              ),
+                          child: SizedBox(
+                            width: deviceWidth,
+                            height: 350.h,
+                            child: backgroundImage!,
+                          ),
+                        ),
+                        if(double.parse(koreaPremiumPercent) < 3)
+                          Positioned(
+                            child: Image.asset(
+                              'images/bear_smile.gif',
+                              width: 300.w,
+                              height: 300.h,
+                            ),
+                            top: deviceHeight * 0.073,
+                            left: deviceWidth * 0.15,
+                          ),
+                        if(double.parse(koreaPremiumPercent) >= 3 && double.parse(koreaPremiumPercent) < 5)
+                          Positioned(
+                            child: Image.asset(
+                              'images/bear1.gif',
+                              width: 300.w,
+                              height: 300.h,
+                            ),
+                            top: deviceHeight * 0.073,
+                            left: deviceWidth * 0.15,
+                          ),
+                        if(double.parse(koreaPremiumPercent) >= 5)
+                          Positioned(
+                            child: Image.asset(
+                              'images/bear_good.gif',
+                              width: 300.w,
+                              height: 300.h,
+                            ),
+                            top: deviceHeight * 0.073, // 50
+                            left: deviceWidth * 0.15, // 60
+                          ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15.h,
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: deviceWidth * 0.12), //40
+                    child: Row(
+                      children: [
+                        Text(
+                          '한국프리미엄',
+                          style: GoogleFonts.lato(
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20.w,
+                        ),
+                        Column(
+                          children: [
+                            icon!,
+                            percentText!,
+                          ],
+                        ),
+                        SizedBox(
+                          width: 25.w,
+                        ),
+                        Text(
+                          '${koreaPremiumPercent}',
+                          style: GoogleFonts.lato(
+                            fontSize: 45.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 15.w,
+                        ),
+                        Text(
+                          '%',
+                          style: GoogleFonts.lato(
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.h,
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: deviceWidth * 0.12),
+                    child: percentDivider!,
+                  ),
+                  SizedBox(
+                    height: 10.h,
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: deviceWidth * 0.21),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'images/logo_upbit.png',
+                          width: 37.w,
+                          height: 35.h,
+                        ),
+                        SizedBox(
+                          width: 5.w,
+                        ),
+                        Text(
+                          '업비트',
+                          style: GoogleFonts.lato(
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.black,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 70.w,
+                        ),
+                        Image.asset(
+                          'images/logo_binance.png',
+                          width: 37.w,
+                          height: 35.h,
+                        ),
+                        SizedBox(
+                          width: 5.w,
+                        ),
+                        Text(
+                          '바이낸스',
+                          style: GoogleFonts.lato(
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: deviceWidth * 0.19),
+                    child: Row(
+                      children: [
+                        Text(
+                          '$upbitBTCPrice 원',
+                          style: GoogleFonts.lato(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 30.w,
+                        ),
+                        Text(
+                          '-',
+                          style: GoogleFonts.lato(
+                            fontSize: 35.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 30.w,
+                        ),
+                        Text(
+                          '$binanceBTCPrice 원',
+                          style: GoogleFonts.lato(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: deviceWidth * 0.32),
+                    child: Row(
+                      children: [
+                        Text(
+                          '=',
+                          style: GoogleFonts.lato(
+                            fontSize: 25.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 30.w,
+                        ),
+                        Text(
+                          '$koreaPremium 원',
+                          style: GoogleFonts.lato(
+                            fontSize: 15.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.fiber_new_rounded),
-            label: '뉴스',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_today),
-            label: '일정',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.add_alert_outlined),
-            label: '알림',
-          ),
-        ],
-        onTap: (int index){
-          setState(() {
-            _currentIndex = index;
-            if(index == 0){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
-            }
-            if(index == 1){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => NewsPage()));
-            }
-            if(index == 2){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => SchedulePage()));
-            }
-            if(index == 3){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Twitpage()));
-            }
-          });
-        },
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _currentIndex,
+          type: BottomNavigationBarType.fixed,
+          iconSize: 20,
+          selectedFontSize: 12,
+          unselectedFontSize: 10,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: '홈',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.fiber_new_rounded),
+              label: '뉴스',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.calendar_today),
+              label: '일정',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.add_alert_outlined),
+              label: '알림',
+            ),
+          ],
+          onTap: (int index){
+            setState(() {
+              _currentIndex = index;
+              if(index == 0){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
+              }
+              if(index == 1){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => NewsPage()));
+              }
+              if(index == 2){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SchedulePage()));
+              }
+              if(index == 3){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Twitpage()));
+              }
+            });
+          },
+        ),
       ),
     );
   }
