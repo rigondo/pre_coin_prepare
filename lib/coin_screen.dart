@@ -129,7 +129,7 @@ class CoinScreenState extends State<CoinScreen> {
             IconButton(
               icon: Icon(Icons.refresh),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
               },
               iconSize: 30.0,
             )
