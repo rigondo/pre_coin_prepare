@@ -187,7 +187,7 @@ class CoinScreenState extends State<CoinScreen> {
                     ),
                   ),
                   SizedBox(
-                    height: 15.h,
+                    height: 30.h,
                   ),
                   Container(
                     padding: EdgeInsets.only(left: deviceWidth * 0.12), //40
@@ -236,14 +236,14 @@ class CoinScreenState extends State<CoinScreen> {
                     ),
                   ),
                   SizedBox(
-                    height: 10.h,
+                    height: 20.h,
                   ),
                   Container(
                     padding: EdgeInsets.only(left: deviceWidth * 0.12),
                     child: percentDivider!,
                   ),
                   SizedBox(
-                    height: 10.h,
+                    height: 20.h,
                   ),
                   Container(
                     padding: EdgeInsets.only(left: deviceWidth * 0.21),
