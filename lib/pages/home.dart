@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pre_coin_prepare/loading.dart';
 import '../coin_screen.dart';
+import '../loading1.dart';
 import '../twit_page.dart';
 import 'cal.dart';
 import 'package:pre_coin_prepare/components/tiledNewsView.dart';
@@ -96,7 +97,7 @@ class _NewsPage extends State<NewsPage> {
             _currentIndex = index;
             if (index == 0) {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Loading()));
+                  context, MaterialPageRoute(builder: (context) => Loading1()));
             }
             if (index == 1) {
               Navigator.push(

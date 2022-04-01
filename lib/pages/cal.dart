@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:pre_coin_prepare/loading1.dart';
 import 'package:pre_coin_prepare/pages/home.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:url_launcher/link.dart';
@@ -214,7 +215,7 @@ class _SchedulePage extends State<SchedulePage> {
           setState(() {
             _currentIndex = index;
             if(index == 0){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Loading1()));
             }
             if(index == 1){
               Navigator.push(context, MaterialPageRoute(builder: (context) => NewsPage()));
