@@ -22,4 +22,4 @@ INU 캡스톤 졸업작품
 ![이누비트스플래시](https://user-images.githubusercontent.com/38679251/143684122-31788961-adae-416a-b121-6cf374667219.png)
 
 
-![KakaoTalk_20220401_154306240](https://user-images.githubusercontent.com/38679251/161209841-3ed34c4a-b0d4-439c-9157-0364cfa877b9.jpg)
+![KakaoTalk_20220401_154306240](https://user-images.githubusercontent.com/38679251/161210310-31a86611-7ce2-40a6-b0ab-e4c5b3127833.jpg)
