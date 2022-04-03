@@ -5,15 +5,15 @@ import 'package:pre_coin_prepare/models/news_api.dart';
 class StaticValues {
   List<News> news = [
     News(
-        title: "Citi Set To Expand Digital Assets Division With 100 New Hires",
+        title: "Trust Wallet CEO Viktor Radchenko Resigns for More Family Time",
         imageUrl:
-        "https://images.cryptocompare.com/news/default/bitcoinist.png",
-        source: "Indian Express",
+        "https://images.cryptocompare.com/news/default/coinquora.png",
+        source: "coinquora",
         url:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYl2TxpCA39qFBqA2U2vVYj005OIalFxAwkg&usqp=CAU",
+        "https://coinquora.com/trust-wallet-ceo-viktor-radchenko-resigns-for-more-family-time/",
 
         body:
-        "Multinational bank Citi is on a hiring spree to expand its blockchain and digital assets division. The company first launched its digital assets division in June this year. Now, it plans to grow the division by hiring 100 new people. Related Reading &#124; Why Citi Is “Slowly” Building A Crypto Infrastructure, CEO Says As part of "),
+        "Trust Wallet CEO Viktor Radchenko resigns from his position He aims to spend more time with his family Current Marketing ...Read More..."),
 
     News(
       title:

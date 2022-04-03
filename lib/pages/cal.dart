@@ -127,6 +127,7 @@ class _SchedulePage extends State<SchedulePage> {
             eventLoader: _getEventsForDay,
             startingDayOfWeek: StartingDayOfWeek.monday,
             calendarStyle: CalendarStyle(
+              selectedDecoration:BoxDecoration(color:Colors.green,shape:BoxShape.circle) ,
               // Use `CalendarStyle` to customize the UI
               outsideDaysVisible: false,
             ),
@@ -174,7 +175,7 @@ class _SchedulePage extends State<SchedulePage> {
                               throw 'could not launch';
                             }
 
-                    },
+                    },style:ElevatedButton.styleFrom(primary:Colors.green)
 
                       ),
 
