@@ -1427,6 +1427,13 @@ _onXYMPressed() async {
     await launch(url);
   }
 }
+_onDFAPressed() async {
+  const url = 'https://twitter.com/DeFinePlatform';
+  if (await canLaunch(url)) {
+    await launch(url);
+  }
+}
+
 
 class Twitpage extends StatefulWidget {
   final List<String> list =
@@ -2158,6 +2165,8 @@ class Search extends SearchDelegate {
                 _onAPIXPressed();
               else if (selectedResult == "심볼(XYM)")
                 _onXYMPressed();
+              else if (selectedResult == "디파인(DFA)")
+                _onDFAPressed();
             }
         );
       },
