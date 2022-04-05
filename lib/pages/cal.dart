@@ -110,6 +110,7 @@ class _SchedulePage extends State<SchedulePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text('BIT Schedule'),
 
       ),
