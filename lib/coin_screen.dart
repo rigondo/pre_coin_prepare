@@ -10,7 +10,7 @@ import 'package:pre_coin_prepare/loading.dart';
 import 'package:pre_coin_prepare/loading1.dart';
 import 'package:pre_coin_prepare/pages/cal.dart';
 //import 'package:pre_coin_prepare/loading1.dart';
-import 'package:pre_coin_prepare/pages/home.dart';
+import 'package:pre_coin_prepare/pages/news_page.dart';
 import 'package:pre_coin_prepare/twit_page.dart';
 import 'network.dart';
 

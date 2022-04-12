@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pre_coin_prepare/loading1.dart';
-import 'package:pre_coin_prepare/pages/home.dart';
+import 'package:pre_coin_prepare/pages/news_page.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:url_launcher/link.dart';
 import 'package:pre_coin_prepare/components/calendar.dart';
@@ -164,7 +164,7 @@ class _SchedulePage extends State<SchedulePage> {
                         borderRadius: BorderRadius.circular(12.0),
                       ),
                       child: ElevatedButton(
-                        child: Text('${value[index].title}'),
+                        child: Text('${value[index].title}'' - ''${value[index].name}'),
                           onPressed: () async {
                             String url = '${value[index].source}';
                             if(await canLaunch(url)){

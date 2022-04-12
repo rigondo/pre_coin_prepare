@@ -6,7 +6,7 @@ import 'dart:ui' as ui;
 import 'dart:async';
 import 'package:flutter/widgets.dart';
 import 'package:pre_coin_prepare/pages/cal.dart';
-import 'package:pre_coin_prepare/pages/home.dart';
+import 'package:pre_coin_prepare/pages/news_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:pre_coin_prepare/loading.dart';
 import 'loading1.dart';
