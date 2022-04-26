@@ -27,6 +27,10 @@ class _NewsPage extends State<NewsPage> {
         .of(context)
         .size;
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: Text('BIT NEWS'),
+      ),
       body: Center(
         child: Container(
             width: size.width,
@@ -40,7 +44,7 @@ class _NewsPage extends State<NewsPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        TopBar(),
+
                         SizedBox(height: 10),
                         WelcomeWidget(),
                       ],
