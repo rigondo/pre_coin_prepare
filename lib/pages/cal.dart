@@ -95,17 +95,6 @@ class _SchedulePage extends State<SchedulePage> {
       _selectedEvents.value = _getEventsForDay(end);
     }
   }
-  _launchURL(String url) async {
-    if(await canLaunch(url)){
-      await launch(url,forceSafariVC: true,
-      forceWebView: true,
-      enableJavaScript: true);
-    }
-    else{
-      throw 'could not launch';
-    }
-
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

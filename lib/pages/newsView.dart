@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pre_coin_prepare/models/news.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class NewsViewPage extends StatelessWidget {
   final News newsPost;
@@ -103,7 +104,24 @@ class NewsViewPage extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.only(right: 40),
                             child: Row(
+
                               children: [
+                                ElevatedButton(
+                                    child: Text('Go to original source'),
+                                    onPressed: () async {
+                                      String url = '${newsPost.url}';
+                                      if(await canLaunch(url)){
+                                        await launch(url,forceSafariVC: true,
+                                            forceWebView: true,
+                                            enableJavaScript: true);
+                                      }
+                                      else{
+                                        throw 'could not launch';
+                                      }
+
+                                    },style:ElevatedButton.styleFrom(primary:Colors.green)
+
+                                ),
                                 Icon(
                                   Icons.bookmark_outlined,
                                   color: Colors.white,
@@ -113,6 +131,7 @@ class NewsViewPage extends StatelessWidget {
                                   Icons.share,
                                   color: Colors.white,
                                   size: 30,
+
                                 ),
                               ],
                             ),

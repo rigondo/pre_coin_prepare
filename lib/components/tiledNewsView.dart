@@ -10,12 +10,13 @@ class TiledNewsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     ApiService client = ApiService();
     return Column(
       children: List.generate(news.length, (index) {
         News newsItem = news[index];
-        int newsDescriptionLength = newsItem.body.split(' ').length;
+        int newsDescriptionLength = newsItem.body
+            .split(' ')
+            .length;
         return GestureDetector(
           onTap: () {
             Navigator.push(
@@ -52,8 +53,8 @@ class TiledNewsView extends StatelessWidget {
                       ),
                       Container(
                           child: Text(
-                        getTruncatedTitle(newsItem.title, 60),
-                      )),
+                            getTruncatedTitle(newsItem.title, 60),
+                          )),
                       SizedBox(
                         height: 10,
                       ),
@@ -61,7 +62,7 @@ class TiledNewsView extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "${newsDescriptionLength >= 200 ? (newsDescriptionLength / 200).floor() : (newsDescriptionLength / 200 * 60).floor()} ${newsDescriptionLength >= 200 ? "mins" : "secs"} read",
+                            "updated",
                             style: TextStyle(
                                 fontSize: 13, color: Colors.grey[700]),
                           ),

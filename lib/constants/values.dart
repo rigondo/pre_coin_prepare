@@ -5,47 +5,88 @@ import 'package:pre_coin_prepare/models/news_api.dart';
 class StaticValues {
   List<News> news = [
     News(
-        title: "Trust Wallet CEO Viktor Radchenko Resigns for More Family Time",
+        title: "A Korean Online Giant Led A 34 Million USD Funding Round For Web3 Start-Up Iskra",
         imageUrl:
-        "https://images.cryptocompare.com/news/default/coinquora.png",
-        source: "coinquora",
+        "https://images.cryptocompare.com/news/default/coinpedia.png",
+        source: "coinpedia",
         url:
-        "https://coinquora.com/trust-wallet-ceo-viktor-radchenko-resigns-for-more-family-time/",
+        "https://coinpedia.org/news/a-korean-online-giant-led-a-34-million-usd-funding-round-for-web3-start-up-iskra/",
 
         body:
-        "Trust Wallet CEO Viktor Radchenko resigns from his position He aims to spend more time with his family Current Marketing ...Read More..."),
+        "The post A Korean Online Giant Led A 34 Million USD Funding Round For Web3 Start-Up Iskra appeared first on Coinpedia - Fintech &amp; Cryptocurreny News Media| Crypto GuideIskra&#8217;s blockchain-powered Web3 gaming platform reimagines traditional game publishing paradigms, aligning the interests of game developers, gamers, and investors. On April 05, 2022, Iskra announced that it secured an investment of up to 34 million USD led by Krust Universe, an investment arm of Kakao, a Korean tech giant. Krust is in charge of Kakao"),
 
     News(
       title:
-      "You shall not pass: Tolkien estate blocks ‘The Lord of the Rings’ JRR Token",
+      "World’s Largest Digital Asset Manager Grayscale Prepares to Enter European Crypto Market",
       body:
-      "The time of the JRR Token has come, but it wasn’t able to defeat the Tolkien Estate in a ruling that has forced the project to shut down and cease trading.",
+      "Grayscale, the worlds largest digital asset manager, with 30 billion dollars in assets under management is planning to expand its footprint in the European market. Grayscale Chief Executive Officer Michael Sonnenshein said that they have yet to decide the countries and exchanges with whom they shall be partnering. Speaking to Bloomberg on Tuesday, April 26, Sonnenshein The post World&#8217;s Largest Digital Asset Manager Grayscale Prepares to Enter European Crypto Market appeared first on CoinGape.",
       url:
-      "https://images.cryptocompare.com/news/default/cointelegraph.png",
-      source: "The Economic Times",
+      "https://coingape.com/worlds-largest-digital-asset-manager-grayscale-prepares-to-enter-european-crypto-market/",
+      source: "coingape",
       imageUrl:
-      "https://yt3.ggpht.com/ytc/AAUvwngucVKXeH6T2_0PfZbyB2XJ3Toff5CfTnZ1alshs_4=s900-c-k-c0x00ffffff-no-rj",
+      "https://images.cryptocompare.com/news/default/coingape.png",
     ),
     News(
         title:
-        "Bitcoin mining power demand is expected to rise significantly by 2023 in Texas.",
+        "Best Crypto Investments For The Month? ApeCoin (APE), Seesaw Protocol (SSW), And Near Protocol (NEAR)",
         url:
-        "https://images.cryptocompare.com/news/default/coinnounce.png",
-        source: "Times of India",
-        imageUrl: "https://static.toiimg.com/photo/47529300.cms",
+        "https://coinpedia.org/guest-post/best-crypto-investments-for-the-month-apecoin-ape-seesaw-protocol-ssw-and-near-protocol-near/",
+        source: "coinpedia",
+        imageUrl: "https://images.cryptocompare.com/news/default/coinpedia.png",
 
         body:
-        "As the state of Texas faces a rapid influx of Bitcoin mining operations, its electrical infrastructure will have to support the industry&#8217;s expected 5,000 megawatts (MW) of additional power demands by 2023. The Bitcoin mining industry in Texas currently consumes around 500 to 1,000 MW of power. Texas has been running a campaign to invite"),
+        "The post Best Crypto Investments For The Month? ApeCoin (APE), Seesaw Protocol (SSW), And Near Protocol (NEAR) appeared first on Coinpedia - Fintech Cryptocurreny News Media| Crypto GuideAs we've entered the second quarter of the year, investors are searching for the top cryptos to invest in. This is especially true for those who have missed out on the opportunity to invest in top coins of the first quarter of the year. We are always ready to help make things simpler for investors"),
     News(
-        title: "Latin America’s MercadoLibre to introduce crypto-offerings in Brazil",
+        title: "Trace Network Labs Brings Your Metaverse Avatar To Life With The Launch of BUDDY",
         url:
-        "https://images.cryptocompare.com/news/default/ambcrypto.png",
-        source: "Indian Express",
+        "https://bitcoinist.com/trace-network-labs-brings-your-metaverse-avatar-to-life-with-the-launch-of-buddy/",
+        source: "bitcoinist",
         imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYl2TxpCA39qFBqA2U2vVYj005OIalFxAwkg&usqp=CAU",
+        "https://images.cryptocompare.com/news/default/bitcoinist.png",
 
         body:
-        "Online marketplace MercadoLibre will now allow buying and selling of crypto through its digital app, reported Bloomberg. The Latin American giant MercadoPago is also set to offer crypto investments to its Brazilian customers soon. The report quoted the company&#8217;s vice president Tulio Oliveira that the broader rollout is expected shortly after a smaller pilot was"),
+        "An announcement by NFT-based luxury lifestyle metaverse enabler, Trace Network Labs, recently released their first product, BUDDY. Trace Network Labs is building a blockchain-powered platform that will enable lifestyle brands to launch multichain and multiverse products for the residents of the metaverse. Metaverses are parallel digital realities where people are represented by their digital twins "),
+
+    News(
+        title: "Tezro: A Disruptive Payment Solution Set To Transform the Blockchain Ecosystem",
+        url:
+        "https://thenewscrypto.com/tezro-a-disruptive-payment-solution-set-to-transform-the-blockchain-ecosystem/",
+        source: "thenewscrypto",
+        imageUrl:
+        "https://images.cryptocompare.com/news/default/thenewscrypto.png",
+
+        body:
+        "Imagine a platform that allows users to instantly send messages and process both fiat and cryptocurrency transactions anywhere in the"),
+    News(
+        title: "Ethereum retests 2800 dollars: Can we expect another price drop?",
+        url:
+        "https://thecoinrise.com/ethereum-retests-2800-can-we-expect-another-price-drop/",
+        source: "thecoinrise",
+        imageUrl:
+        "https://images.cryptocompare.com/news/default/thecoinrise.png",
+
+        body:
+        "Ethereum price analysis for April 27, 2022, comes on a bearish note for the token with high chances of ETH losing the 2800 dollars price support. We saw the token drop 5.24% in the last 24 hours following a surge in selling pressure from holders. On the other hand, the entire crypto market has turned bearish The post Ethereum retests 2800 dollars: Can we expect another price drop? appeared first on Blockchain, Crypto and Stock News."),
+    News(
+        title: "Former Jefferies FX brokers launching institutional crypto exchange",
+        url:
+        "https://cointelegraph.com/news/former-jefferies-fx-brokers-launching-institutional-crypto-exchange",
+        source: "cointelegraph",
+        imageUrl:
+        "https://images.cryptocompare.com/news/default/cointelegraph.png",
+
+        body:
+        "Crossover Markets Group Inc. is being launched by two former Jefferies FX brokers, and aims to make a splash in the institutional crypto investment scene."),
+    News(
+        title: "European Crypto Users Prefer Decentralized Services, Bank of Spain Says",
+        url:
+        "https://cryptopotato.com/european-cryptocurrencies-users-prefer-decentralized-services-bank-of-spain-says/",
+        source: "cryptopotato",
+        imageUrl:
+        "https://images.cryptocompare.com/news/default/cryptopotato.png",
+
+        body:
+        "A recent study by the Central Bank of Spain shows that DEXs and unbacked cryptocurrencies are very popular in the European crypto scene."),
   ];
 }
 /*  List<Category> categories = [
