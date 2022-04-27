@@ -11,6 +11,18 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:pre_coin_prepare/loading.dart';
 import 'loading1.dart';
 
+_onBithumbPressed() async {
+  const url = 'https://cafe.bithumb.com/view/boards/43';
+  if (await canLaunch(url)) {
+    await launch(url);
+  }
+}
+_onUpbitPressed() async {
+  const url = 'https://upbit.com/service_center/notice';
+  if (await canLaunch(url)) {
+    await launch(url);
+  }
+}
 _onBtcPressed() async {
   const url = 'https://twitter.com/bitcoin';
   if (await canLaunch(url)) {
@@ -1517,6 +1529,16 @@ class _TwitPageState extends State<Twitpage> {
         //mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget> [
           ListTile(
+            leading: Image.asset("images/upbit_icon.png", width:30, height:30),
+            title: Text("업비트 거래소"),
+            onTap: _onUpbitPressed,
+          ),
+          ListTile(
+            leading: Image.asset("images/bithumb_icon.png", width:30, height:30),
+            title: Text("빗썸 거래소"),
+            onTap: _onBithumbPressed,
+          ),
+          ListTile(
             leading: Image.asset("images/BTC_icon.png", width:30, height:30),
             title: Text("비트코인(BTC)"),
             onTap: _onBtcPressed,
@@ -1566,7 +1588,6 @@ class _TwitPageState extends State<Twitpage> {
             title: Text("시바이누(SHIB)"),
             onTap: _onShibPressed,
           ),
-
           ListTile(
             leading: Image.asset("images/matic_icon.png", width:30, height:30),
             title: Text("폴리곤(MATIC)"),
@@ -1588,7 +1609,6 @@ class _TwitPageState extends State<Twitpage> {
             title: Text("니어프로토콜(NEAR)"),
             onTap: _onNearPressed,
           ),
-
            */
         ],
       ),
