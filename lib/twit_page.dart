@@ -1513,17 +1513,17 @@ class _TwitPageState extends State<Twitpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-          actions: <Widget>[
-            IconButton(
-              onPressed: () {
-                showSearch(context: context, delegate: Search(widget.list));
-              },
-              icon: Icon(Icons.search),
-            )
-          ],
-          centerTitle: true,
-          title: Text('공식 트윗 계정'),
-          automaticallyImplyLeading: false,
+        actions: <Widget>[
+          IconButton(
+            onPressed: () {
+              showSearch(context: context, delegate: Search(widget.list));
+            },
+            icon: Icon(Icons.search),
+          )
+        ],
+        centerTitle: true,
+        title: Text('Official Twit'),
+        automaticallyImplyLeading: false,
       ),
       body:ListView(
         //mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -1564,14 +1564,9 @@ class _TwitPageState extends State<Twitpage> {
             onTap: _onSolPressed,
           ),
           ListTile(
-            leading: Image.asset("images/LUNA_icon.png", width:30, height:30),
-            title: Text("루나(LUNA)"),
-            onTap: _onLunaPressed,
-          ),
-          ListTile(
-            leading: Image.asset("images/Avax_icon.png", width:30, height:30),
-            title: Text("아발란체(AVAX)"),
-            onTap: _onAvaxPressed,
+            leading: Image.asset("images/DOGE_icon.png", width:30, height:30),
+            title: Text("도지(DOGE)"),
+            onTap: _onDogePressed,
           ),
           ListTile(
             leading: Image.asset("images/pol_icon.png", width:30, height:30),
@@ -1579,19 +1574,19 @@ class _TwitPageState extends State<Twitpage> {
             onTap: _onDotPressed,
           ),
           ListTile(
-            leading: Image.asset("images/DOGE_icon.png", width:30, height:30),
-            title: Text("도지(DOGE)"),
-            onTap: _onDogePressed,
+            leading: Image.asset("images/Avax_icon.png", width:30, height:30),
+            title: Text("아발란체(AVAX)"),
+            onTap: _onAvaxPressed,
+          ),
+          ListTile(
+            leading: Image.asset("images/TRX_icon.png", width:30, height:30),
+            title: Text("트론(TRX)"),
+            onTap: _onTrxPressed,
           ),
           ListTile(
             leading: Image.asset("images/SHIB_icon.png", width:30, height:30),
             title: Text("시바이누(SHIB)"),
             onTap: _onShibPressed,
-          ),
-          ListTile(
-            leading: Image.asset("images/matic_icon.png", width:30, height:30),
-            title: Text("폴리곤(MATIC)"),
-            onTap: _onMaticPressed,
           ),
           /*
           ListTile(
@@ -2104,89 +2099,89 @@ class Search extends SearchDelegate {
               else if (selectedResult == "다이(DAI)")
                 _onDAIPressed();
               else if (selectedResult == "다드(DAD)")
-                _onDADPressed();
+              _onDADPressed();
               else if (selectedResult == "랠리(RLY)")
-                _onRLYPressed();
+              _onRLYPressed();
               else if (selectedResult == "이브이지(EVZ)")
-                _onEVZPressed();
+              _onEVZPressed();
               else if (selectedResult == "바이프로스트(BFC)")
-                 _onBFCPressed();
+              _onBFCPressed();
               else if (selectedResult == "비트코인다이아몬드(BCD)")
-                _onBCDPressed();
+              _onBCDPressed();
               else if (selectedResult == "아모코인(AMO)")
-                _onAMOPressed();
+              _onAMOPressed();
               else if (selectedResult == "라이즌(ATOLO)")
-                _onATOLOPressed();
+              _onATOLOPressed();
               else if (selectedResult == "알파체인(ARPA)")
-                _onARPAPressed();
+              _onARPAPressed();
               else if (selectedResult == "에이피이앤에프티(NFT)")
-                _onNFTPressed();
+              _onNFTPressed();
               else if (selectedResult == "브이시스템즈(VSYS)")
-                _onVSYSPressed();
+              _onVSYSPressed();
               else if (selectedResult == "써틱(CTK)")
-                _onCTKPressed();
+              _onCTKPressed();
               else if (selectedResult == "오션프로토콜(OCEAN)")
-                _onOCEANPressed();
+              _onOCEANPressed();
               else if (selectedResult == "엘리시아(EL)")
-                _onELPressed();
+              _onELPressed();
               else if (selectedResult == "고체인(GO)")
-                _onGOPressed();
+              _onGOPressed();
               else if (selectedResult == "미버스(MEV)")
-                _onMEVPressed();
+              _onMEVPressed();
               else if (selectedResult == "쿠사마(KSM)")
-                _onKSMPressed();
+              _onKSMPressed();
               else if (selectedResult == "이포스(WOZX)")
-                _onWOZXPressed();
+              _onWOZXPressed();
               else if (selectedResult == "더마이다스터치골드(TMTG)")
-                _onTMTGPressed();
+              _onTMTGPressed();
               else if (selectedResult == "벨로프로토콜(VELO)")
-                _onVELOPressed();
+              _onVELOPressed();
               else if (selectedResult == "라이파이낸스(SOFI)")
-                _onSOFIPressed();
+              _onSOFIPressed();
               else if (selectedResult == "뱅코르(BNT)")
-                _onBNTPressed();
+              _onBNTPressed();
               else if (selectedResult == "울트라(UOS)")
-                _onUOSPressed();
+              _onUOSPressed();
               else if (selectedResult == "펑션엑스(FX)")
-                _onFXPressed();
+              _onFXPressed();
               else if (selectedResult == "콜라토큰(COLA)")
-                _onCOLAPressed();
+              _onCOLAPressed();
               else if (selectedResult == "블로서리(BLY)")
-                _onBLYPressed();
+              _onBLYPressed();
               else if (selectedResult == "옵저버(OBSR)")
-                _onOBSRPressed();
+              _onOBSRPressed();
               else if (selectedResult == "타키온프로토콜(IPX)")
-                _onIPXPressed();
+              _onIPXPressed();
               else if (selectedResult == "베이직(BASIC)")
-                _onBASICPressed();
+              _onBASICPressed();
               else if (selectedResult == "뉴메레르(NMR)")
-                _onNMRPressed();
+              _onNMRPressed();
               else if (selectedResult == "왐토큰(WOM)")
-                _onWOMPressed();
+              _onWOMPressed();
               else if (selectedResult == "메이커(MKR)")
-                _onMKRPressed();
+              _onMKRPressed();
               else if (selectedResult == "밸런서(BAL)")
-                _onBALPressed();
+              _onBALPressed();
               else if (selectedResult == "힙스(HIBS)")
-                _onHIBSPressed();
+              _onHIBSPressed();
               else if (selectedResult == "코티(COTI)")
-                _onCOTIPressed();
+              _onCOTIPressed();
               else if (selectedResult == "트러스트버스(TRV)")
-                _onTRVPressed();
+              _onTRVPressed();
               else if (selectedResult == "머신익스체인지코인(MXC)")
-                _onMXCPressed();
+              _onMXCPressed();
               else if (selectedResult == "맵프로토콜(MAP)")
-                _onMAPPressed();
+              _onMAPPressed();
               else if (selectedResult == "폴라리스쉐어(POLA)")
-                _onPOLAPressed();
+              _onPOLAPressed();
               else if (selectedResult == "웨이키체인(WICC)")
-                _onWICCPressed();
+              _onWICCPressed();
               else if (selectedResult == "아픽스(APIX)")
-                _onAPIXPressed();
+              _onAPIXPressed();
               else if (selectedResult == "심볼(XYM)")
-                _onXYMPressed();
+              _onXYMPressed();
               else if (selectedResult == "디파인(DFA)")
-                _onDFAPressed();
+              _onDFAPressed();
             }
         );
       },
