@@ -31,44 +31,18 @@ final _kEventSource = Map.fromIterable(List.generate(50, (index) => index),
         item % 4 + 1, (index) => Event('Event $item | ${index + 1}','','','','')))
   ..addAll({
     kToday: [
-      Event('Bitmart Listing','vita-inu','22022-04-27T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/0539435be0b4caeac38921ca362ee1c4.png','https://coinmarketcal.com/event/bitmart-listing-114803'),
-      Event('Staking Launch Event','aleph-zero','2022-04-27T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/00b77768c6ff9502b161363be613dacb.png','https://coinmarketcal.com/event/launching-staking-event-115551'),
-      Event('RFOX Metaverse MVP Launch','RFOX','2022-04-27T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/4dbfeb9232148b770468fea26dd9367b.png','https://coinmarketcal.com/event/rfox-metaverse-mvp-launch-115547'),
-      Event('New App Version Release','DEXA COIN','2022-04-27T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/cbb1d24382ade689202ee6e3a361ffd1.png','https://coinmarketcal.com/event/new-app-version-release-113093'),
-      Event('Los Angeles Meetup','Harmony','2022-04-27T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/276b5c7050c7fdf04aea49ecc3338ce4.png','https://coinmarketcal.com/event/los-angeles-meetup-115412'),
-      Event('Pegasys Staking & Farming','Syscoin','2022-04-27T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/394c42990f1619629bba5b2577181fcd.png','https://coinmarketcal.com/event/pegasys-staking-farming-115521'),
-      Event('Snail Trail IDO','Avalaunch','2022-04-27T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/008216b5938b9a9f7961d6e1fa6ad5df.png','https://coinmarketcal.com/event/snail-trail-ido-115431'),
-      Event('Staking Leaders Snapshot','Everdome','2022-04-27T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/d4af9148a585ba39093015ec8d9593f7.png','https://coinmarketcal.com/event/staking-leaders-snapshot-115479'),
+      Event('Huobi Global Listing','klaytn','2022-05-18T00:00:00Z',"https://d32bfp67k1q0s7.cloudfront.net/db38d3b93cd39fd4a534e1b77bf23062.png","https://coinmarketcal.com/event/huobi-global-listing-117663"),
+      Event('New Website Release','Portify','2022-05-18T00:00:00Z',"https://d32bfp67k1q0s7.cloudfront.net/6b72aa5f5e7638f3e8653770522a3da1.png","https://coinmarketcal.com/event/new-website-release-117681"),
+      Event("In-app Staking on Binance","amber",'2022-05-18T00:00:00Z',"https://d32bfp67k1q0s7.cloudfront.net/574e8d7d1cb47a5d3c4f15d9511fb015.jpeg","https://coinmarketcal.com/event/in-app-staking-on-binance-117785"),
+      Event('AMA with Ari10 Team','ari10','2022-05-18T00:00:00Z',"https://d32bfp67k1q0s7.cloudfront.net/9cb99580d8960c0d4c09f947bab66cd2.jpeg","https://coinmarketcal.com/event/ama-with-ari10-team-117170"),
+      Event("AMA with Mamak Crypto","litedex",'2022-05-18T00:00:00Z',"https://d32bfp67k1q0s7.cloudfront.net/a13235e04951ee5c4c500621b9a6a402.png","https://coinmarketcal.com/event/ama-with-mamak-crypto-117802"),
+      Event("Lottery Gaming Platform","BITICA COIN",'2022-05-18T00:00:00Z',"https://d32bfp67k1q0s7.cloudfront.net/524d06cb97c5f76645eb7869e973629a.jpeg","https://coinmarketcal.com/event/hello-jacjpot-launching-117607"),
+      Event("Discord AMA","Beefy.Finance",'2022-05-18T00:00:00Z',"https://d32bfp67k1q0s7.cloudfront.net/c546c6d4b4c58243312a1e2f164d5ad9.png","https://coinmarketcal.com/event/discord-ama-117714"),
+      Event("Bitforex Listing","Step App",'2022-05-18T00:00:00Z',"https://d32bfp67k1q0s7.cloudfront.net/34c35fa009326a57fd2bbacf13cae862.png","https://coinmarketcal.com/event/bitforex-listing-117800"),
 
     ],
-    kT2: [
-      Event('Spanish Community Launch','Traders Coin','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/aabb5b4cdd811783bd74eaa55c8b9177.jpeg','https://coinmarketcal.com/event/spanish-community-launch-109284'),
-      Event('Enter the Metaverse','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/my-space-pug-launch-109441'),
-      Event('Roadmap Update & AMA','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/ari10-roadmap-update-109226'),
-      Event('Metabonding Snapshots','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/metabonding-snapshots-106524'),
 
-    ],
-    kT3: [
-      Event('Spanish Community Launch','Traders Coin','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/aabb5b4cdd811783bd74eaa55c8b9177.jpeg','https://coinmarketcal.com/event/spanish-community-launch-109284'),
-      Event('Enter the Metaverse','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/my-space-pug-launch-109441'),
-      Event('Roadmap Update & AMA','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/ari10-roadmap-update-109226'),
-      Event('Metabonding Snapshots','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/metabonding-snapshots-106524'),
 
-    ],
-    kT4: [
-      Event('Spanish Community Launch','Traders Coin','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/aabb5b4cdd811783bd74eaa55c8b9177.jpeg','https://coinmarketcal.com/event/spanish-community-launch-109284'),
-      Event('Enter the Metaverse','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/my-space-pug-launch-109441'),
-      Event('Roadmap Update & AMA','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/ari10-roadmap-update-109226'),
-      Event('Metabonding Snapshots','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/metabonding-snapshots-106524'),
-
-    ],
-    kT5: [
-      Event('Spanish Community Launch','Traders Coin','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/aabb5b4cdd811783bd74eaa55c8b9177.jpeg','https://coinmarketcal.com/event/spanish-community-launch-109284'),
-      Event('Enter the Metaverse','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/my-space-pug-launch-109441'),
-      Event('Roadmap Update & AMA','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/ari10-roadmap-update-109226'),
-      Event('Metabonding Snapshots','Cardano','2022-03-17T00:00:00Z','https://d32bfp67k1q0s7.cloudfront.net/de5e289cfa8c297a5ab92b08f93aef45.png','https://coinmarketcal.com/event/metabonding-snapshots-106524'),
-
-    ],
   });
 
 int getHashCode(DateTime key) {
@@ -85,9 +59,5 @@ List<DateTime> daysInRange(DateTime first, DateTime last) {
 }
 
 final kToday = DateTime.now();
-final kT2 = DateTime(kToday.day + 1);
-final kT3 = DateTime(kToday.day + 2);
-final kT4 = DateTime(kToday.day + 3);
-final kT5 = DateTime(kToday.day + 4);
 final kFirstDay = DateTime(kToday.year, kToday.month - 3, kToday.day);
 final kLastDay = DateTime(kToday.year, kToday.month + 3, kToday.day);

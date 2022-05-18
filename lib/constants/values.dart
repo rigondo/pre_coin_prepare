@@ -5,88 +5,88 @@ import 'package:pre_coin_prepare/models/news_api.dart';
 class StaticValues {
   List<News> news = [
     News(
-        title: "A Korean Online Giant Led A 34 Million USD Funding Round For Web3 Start-Up Iskra",
+        title: "Recession talks surge, Elon Musk predicts one lasting up to 18 months as crypto tanks",
         imageUrl:
-        "https://images.cryptocompare.com/news/default/coinpedia.png",
-        source: "coinpedia",
+        "https://images.cryptocompare.com/news/default/cryptopolitan.png",
+        source: "cryptopolitan",
         url:
-        "https://coinpedia.org/news/a-korean-online-giant-led-a-34-million-usd-funding-round-for-web3-start-up-iskra/",
+        "https://www.cryptopolitan.com/recession-set-for-18m-as-crypto-tanks-musk/",
 
         body:
-        "The post A Korean Online Giant Led A 34 Million USD Funding Round For Web3 Start-Up Iskra appeared first on Coinpedia - Fintech &amp; Cryptocurreny News Media| Crypto GuideIskra&#8217;s blockchain-powered Web3 gaming platform reimagines traditional game publishing paradigms, aligning the interests of game developers, gamers, and investors. On April 05, 2022, Iskra announced that it secured an investment of up to 34 million USD led by Krust Universe, an investment arm of Kakao, a Korean tech giant. Krust is in charge of Kakao"),
-
+        "For the last several months, recession talks have dominated the market. Crypto is a new economic asset that market experts have integrated into the conversation about recessions. Elon Musk, the famous SpaceX CEO and business mogul stated that the US economy might sink into a recession and be tough going&#8221; for 12 to 18 months....",
+    ),
     News(
       title:
-      "World’s Largest Digital Asset Manager Grayscale Prepares to Enter European Crypto Market",
+      "TerraLabs Sold Over 80,000 BTC To Rescue Its Stablecoin, Luna",
       body:
-      "Grayscale, the worlds largest digital asset manager, with 30 billion dollars in assets under management is planning to expand its footprint in the European market. Grayscale Chief Executive Officer Michael Sonnenshein said that they have yet to decide the countries and exchanges with whom they shall be partnering. Speaking to Bloomberg on Tuesday, April 26, Sonnenshein The post World&#8217;s Largest Digital Asset Manager Grayscale Prepares to Enter European Crypto Market appeared first on CoinGape.",
+      "The crypto market has experienced many bloodbaths in the past. But last week&#8217;s crash had more catastrophic effects on the market than recent bearish trends, mainly on the stablecoins. UST, a stablecoin issued by Terraform Labs, is an example that stunned the crypto world as the coin collapsed and dropped its value from 1dollar to 0.15dollar between May 9 to May 14, nearly losing 85% of its value. Afterward, on May 16, the Luna Foundation Guard (LFG) announced on Twitter that they had sold out their Bitcoin (BTC) reserves between May 8 to 10 to rescue its stablecoin. Related Reading &#124; Bitcoin Marks Seven Consecutive Red Candles, Paints Gruesome Picture For Market It was not the first time a crypto project collapsed. But the previous collapse had not the terrible effects as the stablecoin UST has suffered in the most recent bloodbath. LFG, an organization aimed at supporting the blockchain innovators developing a decentralized economy, revealed its reserves of 80,394 BTC and other digital currencies it held as of May 07, 2022. The Foundation reportedly began converting its assets into reserves against UST on May 8, 2018, when UST&#8217;s price fell significantly. It took these steps immediately since it is a non-profit firm with a primary motto to strengthen Terra&#8217;s ecosystem. Similarly, the firm explained it quickly shifted the asset by transferring the digital assets to a counterparty, which does not require short notic...",
       url:
-      "https://coingape.com/worlds-largest-digital-asset-manager-grayscale-prepares-to-enter-european-crypto-market/",
-      source: "coingape",
+      "https://www.newsbtc.com/terra-luna/terralabs-sold-over-80000-btc-to-rescue-its-stablecoin-luna/",
+      source: "seekingalpha",
       imageUrl:
-      "https://images.cryptocompare.com/news/default/coingape.png",
+      "https://images.cryptocompare.com/news/default/newsbtc.png",
     ),
     News(
         title:
-        "Best Crypto Investments For The Month? ApeCoin (APE), Seesaw Protocol (SSW), And Near Protocol (NEAR)",
+        "World’s Largest Crypto ETP Issuer Enters US Market",
         url:
-        "https://coinpedia.org/guest-post/best-crypto-investments-for-the-month-apecoin-ape-seesaw-protocol-ssw-and-near-protocol-near/",
-        source: "coinpedia",
-        imageUrl: "https://images.cryptocompare.com/news/default/coinpedia.png",
+        "https://blockworks.co/worlds-largest-crypto-exchange-traded-product-issuer-enters-us-market/",
+        source: "blockworks",
+        imageUrl: "https://images.cryptocompare.com/news/default/blockworks.png",
 
         body:
-        "The post Best Crypto Investments For The Month? ApeCoin (APE), Seesaw Protocol (SSW), And Near Protocol (NEAR) appeared first on Coinpedia - Fintech Cryptocurreny News Media| Crypto GuideAs we've entered the second quarter of the year, investors are searching for the top cryptos to invest in. This is especially true for those who have missed out on the opportunity to invest in top coins of the first quarter of the year. We are always ready to help make things simpler for investors"),
+        "Private placements, which track indices developed by Vinter, are available to accredited US investorsThe post World’s Largest Crypto ETP Issuer Enters US Market appeared first on Blockworks."),
     News(
-        title: "Trace Network Labs Brings Your Metaverse Avatar To Life With The Launch of BUDDY",
+        title: "Perspectives On The Current Crypto Slump",
         url:
-        "https://bitcoinist.com/trace-network-labs-brings-your-metaverse-avatar-to-life-with-the-launch-of-buddy/",
-        source: "bitcoinist",
+        "https://seekingalpha.com/article/4512800-perspectives-current-crypto-slump?utm_source=cryptocompare.com&utm_medium=referral",
+        source: "seekingalpha",
         imageUrl:
-        "https://images.cryptocompare.com/news/default/bitcoinist.png",
+        "https://images.cryptocompare.com/news/default/seekingalpha.png",
 
         body:
-        "An announcement by NFT-based luxury lifestyle metaverse enabler, Trace Network Labs, recently released their first product, BUDDY. Trace Network Labs is building a blockchain-powered platform that will enable lifestyle brands to launch multichain and multiverse products for the residents of the metaverse. Metaverses are parallel digital realities where people are represented by their digital twins "),
+        "I’d like to focus on how we can better understand the current cryptocurrency market movement by looking at the S&P Cryptocurrency Indices.When we look at the S&P Bitcoin Index specifically, we can see that the two largest drawdowns since inception were 76% and 71%.Looking at the S&P Cryptocurrency Indices overall, we can see that performance has varied based on market cap YTD."),
 
     News(
-        title: "Tezro: A Disruptive Payment Solution Set To Transform the Blockchain Ecosystem",
+        title: "Bitcoin and Ethereum Stuck Near Key Levels, Altcoins Struggle",
         url:
-        "https://thenewscrypto.com/tezro-a-disruptive-payment-solution-set-to-transform-the-blockchain-ecosystem/",
-        source: "thenewscrypto",
+        "https://cryptonews.com/news/bitcoin-and-ethereum-stuck-near-key-levels-altcoins-struggle.htm",
+        source: "cryptonews",
+        imageUrl:
+        "https://images.cryptocompare.com/news/default/cryptonews.png",
+
+        body:
+        "Bitcoin price is struggling to gain momentum above USD 30,000 and is currently (11:46 UTC) trading near USD 29,850 while holding the key USD 29,000 support. A downside break below USD 29,000 could start a stronger bearish wave. BTC is down 2% in a day and 3% in a week....Read More: Bitcoin and Ethereum Stuck Near Key Levels, Altcoins Struggle"),
+    News(
+        title: "Breaking: Terra Founder Do Kwon Faces Lawsuit In South Korea",
+        url:
+        "https://coingape.com/breaking-terra-founder-do-kwon-faces-lawsuit-in-south-korea/",
+        source: "coingape",
+        imageUrl:
+        "https://images.cryptocompare.com/news/default/coingape.png",
+
+        body:
+        "A group of South Korean investors appears to have filed a court case against Terra founder Do Kwon over the blockchain&#8217;s crash. Local media reports suggest that several LUNA and UST holders have decided to hold Kwon accountable for the recent price collapse. They are being represented by law firm LKB  Partners, whose employees The post Breaking: Terra Founder Do Kwon Faces Lawsuit In South Korea appeared first on CoinGape."),
+    News(
+        title: "Web3 Gaming Company Metatheory Raises 24 Million dollars With Backing From A16z, Pantera, and FTX",
+        url:
+        "https://news.bitcoin.com/web3-gaming-company-metatheory-raises-24-million-with-backing-from-a16z-pantera-and-ftx/",
+        source: "bitcoin.com",
+        imageUrl:
+        "https://images.cryptocompare.com/news/default/bitcoincom.png",
+
+        body:
+        "Metatheory, a Web3 gaming company founded in 2021, has announced it has raised 24 million dollars in a Series A funding round. The investment round, which was led by big VC names in the crypto space like a16z, also had the participation of Pantera Capital and FTX Ventures. Kevin Lin, CEO of the company and co-founder"),
+    News(
+        title: "Fan Tokens Trending Up After Being Listed On Bitpanda",
+        url:
+        "https://thenewscrypto.com/fan-tokens-trending-up-after-being-listed-on-bitpanda/",
+        source: "cryptopotato",
         imageUrl:
         "https://images.cryptocompare.com/news/default/thenewscrypto.png",
 
         body:
-        "Imagine a platform that allows users to instantly send messages and process both fiat and cryptocurrency transactions anywhere in the"),
-    News(
-        title: "Ethereum retests 2800 dollars: Can we expect another price drop?",
-        url:
-        "https://thecoinrise.com/ethereum-retests-2800-can-we-expect-another-price-drop/",
-        source: "thecoinrise",
-        imageUrl:
-        "https://images.cryptocompare.com/news/default/thecoinrise.png",
-
-        body:
-        "Ethereum price analysis for April 27, 2022, comes on a bearish note for the token with high chances of ETH losing the 2800 dollars price support. We saw the token drop 5.24% in the last 24 hours following a surge in selling pressure from holders. On the other hand, the entire crypto market has turned bearish The post Ethereum retests 2800 dollars: Can we expect another price drop? appeared first on Blockchain, Crypto and Stock News."),
-    News(
-        title: "Former Jefferies FX brokers launching institutional crypto exchange",
-        url:
-        "https://cointelegraph.com/news/former-jefferies-fx-brokers-launching-institutional-crypto-exchange",
-        source: "cointelegraph",
-        imageUrl:
-        "https://images.cryptocompare.com/news/default/cointelegraph.png",
-
-        body:
-        "Crossover Markets Group Inc. is being launched by two former Jefferies FX brokers, and aims to make a splash in the institutional crypto investment scene."),
-    News(
-        title: "European Crypto Users Prefer Decentralized Services, Bank of Spain Says",
-        url:
-        "https://cryptopotato.com/european-cryptocurrencies-users-prefer-decentralized-services-bank-of-spain-says/",
-        source: "cryptopotato",
-        imageUrl:
-        "https://images.cryptocompare.com/news/default/cryptopotato.png",
-
-        body:
-        "A recent study by the Central Bank of Spain shows that DEXs and unbacked cryptocurrencies are very popular in the European crypto scene."),
+        "The Fan Token market cap today is 205 Million dollars 40.4% increase in the last 24 hours. Service will be provided"),
   ];
 }
 /*  List<Category> categories = [
